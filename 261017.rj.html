@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8" />
+
+		<title>1017reveal.js</title>
+
+		<meta
+			name="description"
+			content="A framework for easily creating beautiful presentations using HTML"
+		/>
+		<meta name="author" content="Hakim El Hattab" />
+
+		<meta name="mobile-web-app-capable" content="yes" />
+		<meta name="mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="dist/reset.css" />
+		<link rel="stylesheet" href="dist/reveal.css" />
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme" />
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="dist/plugin/highlight/monokai.css" />
+	</head>
+
+	<body>
+		<div class="reveal">
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h2>おはぎ</h2>
+					<p>
+						もち米とうるち米を混ぜて炊き、軽くつぶして丸め、あんこで包んだ和菓子。
+					</p>
+					<p>きな粉・すりごま・青のりなどをまぶすこともあります。</p>
+				</section>
+
+				<section>
+					<h2>ぼたもちとの関係</h2>
+					<p>基本的には同じお菓子で、季節によって呼び名が変わるとされています。</p>
+					<ul>
+						<li><strong>春のお彼岸</strong>：牡丹の花にちなんで「ぼたもち（牡丹餅）」</li>
+						<li><strong>秋のお彼岸</strong>：萩の花にちなんで「おはぎ（御萩）」</li>
+					</ul>
+					<p style="font-size: 0.7em">
+						春はこしあん、秋はつぶあんという説明もありますが、地域や家庭によって違います。
+					</p>
+				</section>
+
+				<section>
+					<h2>お彼岸との関係</h2>
+					<p>小豆の赤い色には邪気を払う力があると考えられていました。</p>
+					<p>
+						そのため、先祖供養のお供え物として、また家族でお彼岸に食べるものとして定着しました。
+					</p>
+				</section>
+
+				<!-- 豆知識は縦スライドにしています（下キーで進みます） -->
+				<section>
+					<section>
+						<h2>そのほかの豆知識</h2>
+						<p>下キーで3つの豆知識を見られます。</p>
+					</section>
+					<section>
+						<h2>区別しない地域も</h2>
+						<p>地域によっては、おはぎ・ぼたもちを区別せず一年中同じ呼び方をします。</p>
+					</section>
+					<section>
+						<h2>「半殺し」「皆殺し」</h2>
+						<p>
+							物騒な別名ですが、米のつぶし具合（粒が残る程度か、完全につぶすか）を表す言い方です。
+						</p>
+					</section>
+					<section>
+						<h2>夏は「夜船」、冬は「北窓」</h2>
+						<p>
+							作るときに「つき（搗き）」の音がしないので、「いつ搗いたかわからない＝着き知らず」にかけた言葉遊びです（諸説あります）。
+						</p>
+					</section>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="dist/plugin/zoom.js"></script>
+		<script src="dist/plugin/notes.js"></script>
+		<script src="dist/plugin/search.js"></script>
+		<script src="dist/plugin/markdown.js"></script>
+		<script src="dist/plugin/highlight.js"></script>
+		<script>
+			// Also available as an ES module, see: https://revealjs.com/initialization/
+			// import Reveal from 'reveal.js';
+			// import RevealZoom from 'reveal.js/plugin/zoom';
+			// import RevealNotes from 'reveal.js/plugin/notes';
+			// import RevealSearch from 'reveal.js/plugin/search';
+			// import RevealMarkdown from 'reveal.js/plugin/markdown';
+			// import RevealHighlight from 'reveal.js/plugin/highlight';
+
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight],
+			});
+		</script>
+	</body>
+</html>
