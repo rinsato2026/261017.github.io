@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 	<head>
 		<meta charset="utf-8" />
 
-		<title>1017reveal.js</title>
+		<title>reveal.js</title>
 
 		<meta
 			name="description"
@@ -16,16 +16,18 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css" />
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css" />
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/black.css" id="theme" />
+		<link rel="stylesheet" href="dist/reset.css" />
+		<link rel="stylesheet" href="dist/reveal.css" />
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme" />
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="dist/plugin/highlight/monokai.css" />
 	</head>
 
 	<body>
 		<div class="reveal">
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-
 				<section>
 					<h2>おはぎ</h2>
 					<p>
@@ -46,6 +48,10 @@
 					</p>
 				</section>
 
+
+				
+
+				<!-- Example of nested vertical slides -->
 				<section>
 					<h2>お彼岸との関係</h2>
 					<p>小豆の赤い色には邪気を払う力があると考えられていました。</p>
@@ -53,9 +59,8 @@
 						そのため、先祖供養のお供え物として、また家族でお彼岸に食べるものとして定着しました。
 					</p>
 				</section>
-
-				<!-- 豆知識は縦スライドにしています（下キーで進みます） -->
-				<section>
+				
+					<section>
 					<section>
 						<h2>そのほかの豆知識</h2>
 						<p>下キーで3つの豆知識を見られます。</p>
@@ -77,18 +82,32 @@
 						</p>
 					</section>
 				</section>
-
 			</div>
 		</div>
 
-		<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+		<script src="dist/reveal.js"></script>
+		<script src="dist/plugin/zoom.js"></script>
+		<script src="dist/plugin/notes.js"></script>
+		<script src="dist/plugin/search.js"></script>
+		<script src="dist/plugin/markdown.js"></script>
+		<script src="dist/plugin/highlight.js"></script>
 		<script>
+			// Also available as an ES module, see: https://revealjs.com/initialization/
+			// import Reveal from 'reveal.js';
+			// import RevealZoom from 'reveal.js/plugin/zoom';
+			// import RevealNotes from 'reveal.js/plugin/notes';
+			// import RevealSearch from 'reveal.js/plugin/search';
+			// import RevealMarkdown from 'reveal.js/plugin/markdown';
+			// import RevealHighlight from 'reveal.js/plugin/highlight';
 
 			Reveal.initialize({
 				controls: true,
 				progress: true,
 				center: true,
 				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight],
 			});
 		</script>
 	</body>
